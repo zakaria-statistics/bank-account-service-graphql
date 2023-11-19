@@ -4,7 +4,7 @@ import org.sid.bankaccountservice.dto.BankAccountRequestDTO;
 import org.sid.bankaccountservice.dto.BankAccountResponseDTO;
 import org.sid.bankaccountservice.entities.BankAccount;
 import org.sid.bankaccountservice.enums.AccountType;
-import org.sid.bankaccountservice.exception.BankAccountNotFoundException;
+import org.sid.bankaccountservice.exceptions.BankAccountNotFoundException;
 import org.sid.bankaccountservice.mappers.AccountMapper;
 import org.sid.bankaccountservice.repositories.BankAccountRepository;
 import org.springframework.beans.BeanUtils;
@@ -69,7 +69,7 @@ public class AccountServiceImpl implements AccountService {
             List<BankAccount> bankAccounts = new ArrayList<>();
                     bankAccounts.add(
                             BankAccount.builder()
-                    .Id(i + 1 + " --> " + UUID.randomUUID().toString())
+                    .Id(i + 1 + "-->" + UUID.randomUUID())
                     .balance(10000 + Math.random() * 90000)
                     .createdAt(new Date())
                     .type(Math.random() < 0.5 ? AccountType.CURRENT_ACCOUNT : AccountType.SAVING_ACCOUNT)

@@ -2,7 +2,7 @@ package org.sid.bankaccountservice.web;
 
 import org.sid.bankaccountservice.dto.BankAccountRequestDTO;
 import org.sid.bankaccountservice.dto.BankAccountResponseDTO;
-import org.sid.bankaccountservice.exception.BankAccountNotFoundException;
+import org.sid.bankaccountservice.exceptions.BankAccountNotFoundException;
 import org.sid.bankaccountservice.repositories.BankAccountRepository;
 import org.sid.bankaccountservice.service.AccountService;
 import org.springframework.web.bind.annotation.*;

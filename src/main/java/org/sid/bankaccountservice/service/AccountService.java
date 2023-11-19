@@ -2,7 +2,7 @@ package org.sid.bankaccountservice.service;
 
 import org.sid.bankaccountservice.dto.BankAccountRequestDTO;
 import org.sid.bankaccountservice.dto.BankAccountResponseDTO;
-import org.sid.bankaccountservice.exception.BankAccountNotFoundException;
+import org.sid.bankaccountservice.exceptions.BankAccountNotFoundException;
 
 import java.util.List;
 
