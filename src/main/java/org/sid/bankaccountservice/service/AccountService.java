@@ -12,5 +12,6 @@ public interface AccountService {
     List<BankAccountResponseDTO> getAllAccounts();
     BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountRequestDTO);
     void deleteById(String id) throws BankAccountNotFoundException;
+    void populateData();
 
 }
